@@ -61,7 +61,7 @@ const speak = () => {
     console.error('Already speaking...');
     return;
   }
-  if (textInput.value !== '') {
+  if (textInput.value.trim() !== '') {
     // Add background animation
     body.style.background = '#141414 url(img/wave.gif)';
     body.style.backgroundRepeat = 'repeat-x';
